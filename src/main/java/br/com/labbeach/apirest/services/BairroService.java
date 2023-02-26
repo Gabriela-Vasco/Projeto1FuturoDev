@@ -1,6 +1,7 @@
 package br.com.labbeach.apirest.services;
 
 import br.com.labbeach.apirest.models.Bairro;
+import br.com.labbeach.apirest.models.Praia;
 import br.com.labbeach.apirest.repositories.BairroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,10 +18,11 @@ public class BairroService {
         return bairroRepository.findAll();
     }
 
-    public void deleteByIdBairro(Long id){
-        bairroRepository.deleteByIdBairro(id);
-    }
 
+    public void deleteByIdBairro(Long id){
+            bairroRepository.deleteByIdBairro(id);
+    }
+    
     public Bairro save(Bairro bairro){
         return bairroRepository.save(bairro);
     }

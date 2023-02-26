@@ -31,4 +31,9 @@ public class Praia {
     @ManyToOne
     @JoinColumn (name = "bairro_id")
     private Bairro bairro;
+
+    public Bairro getBairro() {
+        return bairro;
+    }
 }
+

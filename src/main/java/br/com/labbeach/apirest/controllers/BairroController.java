@@ -1,7 +1,9 @@
 package br.com.labbeach.apirest.controllers;
 
 import br.com.labbeach.apirest.models.Bairro;
+import br.com.labbeach.apirest.models.Praia;
 import br.com.labbeach.apirest.services.BairroService;
+import br.com.labbeach.apirest.services.PraiaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping ("/bairros")
+@RequestMapping ("/api/v1/bairros")
 public class BairroController {
     @Autowired
     private BairroService bairroService;
