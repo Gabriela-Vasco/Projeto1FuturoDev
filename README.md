@@ -18,7 +18,7 @@
 </ul>
 
 <ul> Obs.:
-  <li>PostgreSQL srever port: 5432</li>
+  <li>PostgreSQL server port: 5432</li>
   <li>Tomcat port: 8888</li>
 </ul>
 
