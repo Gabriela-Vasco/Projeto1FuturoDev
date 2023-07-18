@@ -1,7 +1,6 @@
 package br.com.labbeach.apirest.services;
 
 import br.com.labbeach.apirest.models.Bairro;
-import br.com.labbeach.apirest.models.Praia;
 import br.com.labbeach.apirest.repositories.BairroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

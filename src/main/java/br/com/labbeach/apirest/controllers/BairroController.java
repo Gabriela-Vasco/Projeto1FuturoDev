@@ -1,9 +1,7 @@
 package br.com.labbeach.apirest.controllers;
 
 import br.com.labbeach.apirest.models.Bairro;
-import br.com.labbeach.apirest.models.Praia;
 import br.com.labbeach.apirest.services.BairroService;
-import br.com.labbeach.apirest.services.PraiaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +18,7 @@ public class BairroController {
     @GetMapping
     public ResponseEntity<List<Bairro>> findAll(){
         List<Bairro> bairros = bairroService.findAll();
-        return ResponseEntity.status(HttpStatus.OK).body(bairroService.findAll());
+        return ResponseEntity.status(HttpStatus.OK).body(bairros);
     }
 
     @PostMapping
